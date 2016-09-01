@@ -1,0 +1,18 @@
+{
+  "name": "TCC",
+  "version": "1",
+  "manifest_version": 2,
+  "permissions": ["serial"],
+  "minimum_chrome_version": "36",
+  "description": "App para comunicação com o Arduino",
+  "icons": {
+    "16": "assets/icon_16.png",
+    "128": "assets/icon_128.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["js/background.js"],
+      "transient": true
+    }
+  }
+}

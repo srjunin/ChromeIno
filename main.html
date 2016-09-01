@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<div id="background">
+			<div id="container">
+				<div id="connectOptions">
+					<select id="ports" class="button"><option>Espere. Carregando...</option></select>
+					<button id="btnConnect" class="button">Conectar</button>
+					<button type="button" class="button" id="btnMonitorShowHide">Monitor</button>
+				</div>
+				<div id="eventsButtons">
+					<button id="btnButton" class="button">Botão</button>
+					<button id="btnToggleButton" class="button">ToggleButton</button>
+					<button id="btnSlider" class="button">Slider</button>
+					<button id="btnText" class="button">Text</button>
+				</div>
+				<div id="divEventsButton">
+					<table id="eventsButtonList" border="1">
+						<tr>
+							<th style="width:20%">TIPO</th>
+							<th>VALOR</th>
+							<th style="width:10%">OUTRO</th>
+							<!--<th style="width:10%">DELETAR</th>-->
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="monitor">
+				<div id="sendBox">
+					<input type="text" id="textMessageSend" />
+					<button id="sendCmd">Send</button>
+				</div>
+				<div id="monitorResult"></div>
+			</div>
+		</div>
+		
+		<div class="window" id="janelaButton">
+    		<h4>Button</h4>
+			<p>Valor: <input type="text" id="valor"></p>
+			<div style="width:100%;text-align:center;">
+				<button class="btnSalvarButton">Salvar</button>
+				<button class="btnFechar">Fechar</button>
+			</div>
+		</div>
+		
+		<dialog id="favDialog">
+			<p><label>Erro ao conectar!</label></p>
+			<p><label>Selecione um dispositivo!</label></p>
+			<menu>
+      			<button id="cancel" type="reset">Close</button>
+    		</menu>
+		</dialog>
+		
+		<div class="window" id="janelaToggle">
+    		<h4>Toggle Button</h4>
+    		<p>Positivo: <input type="numeric" id="trueToggle"></p>
+			<p>Negativo: <input type="numeric" id="falseToggle"></p>
+			<div style="width:100%;text-align:center;">
+				<button class="btnSalvarToggleButton">Salvar</button>
+				<button class="btnFechar">Fechar</button>
+			</div>
+		</div>
+		
+		<div class="window" id="janelaSlider">
+    		<h4>Slider</h4>
+    		<p>Valor Minimo: <input type="numeric" id="vMin"></p>
+		<p>Valor Maximo: <input type="numeric" id="vMax"></p>
+		<p>Pino: <input type="numeric" id="vPin"></p>
+			<div style="width:100%;text-align:center;">
+				<button class="btnSalvarSlider">Salvar</button>
+				<button class="btnFechar">Fechar</button>
+			</div>
+		</div>
+		
+		<div class="window" id="janelaText">
+    		<h4>Text</h4>
+    		<p>String: <input type="numeric" id="txtValue">
+			<div style="width:100%;text-align:center;">
+				<button class="btnSalvarText">Salvar</button>
+				<button class="btnFechar">Fechar</button>
+			</div>
+		</div>
+		
+		<div id="mascara"></div>
+		
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/javascript.js"></script>
+	</body>
+</html>

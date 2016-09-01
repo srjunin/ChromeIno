@@ -1,0 +1,184 @@
+body {
+}
+
+#background {
+	height:100%;
+	top:10px;
+	bottom:10px;
+	left:10px;
+	right:10px;
+}
+
+#container {
+	width:480px;
+	float:left;
+}
+
+#monitor {
+	width:495px;
+	float:right;
+	display:none;
+}
+
+#connectOptions {
+	padding:10px;
+}
+
+.button {
+	padding: .5em 2em;
+	white-space: nowrap;
+}
+
+#btnMonitorShowHide {
+	float:right;
+}
+
+#eventsButtons {
+	color:fff;
+	width:480px;
+	float:left;
+	padding:10px;
+}
+
+#divEventsButton {
+	float:left;
+	position:absolute;
+	width:auto;
+	height:auto;
+	top:110px;
+	left:10px;
+	right:10px;
+	bottom:10px;
+	border:1px solid #CCC;
+	overflow: auto;
+}
+
+#eventsButtonList {
+	width:100%;
+	text-align:center;
+}
+
+#sendBox {
+	display: flex;
+	position:relative;
+	top:10px;
+}
+
+#textMessageSend {
+	flex: 1;
+	padding: .5em 1em;
+	width: 100%;
+	float:right;
+}
+
+#sendCmd {
+	flex: 0;
+	padding: .5em 1em;
+	white-space: nowrap;
+}
+
+#monitorResult {
+	position:absolute;
+	right:10px;
+	bottom:10px;
+	top:55px;
+	left:500px;
+	border:1px solid #CCC;
+	overflow: auto;
+}
+
+.position-input {
+  display: block;
+   -webkit-appearance:none !important;
+  width: 90%;
+  margin: 5px;
+  height: 7px;
+  background: #83B152;
+}
+
+.position-input::-webkit-slider-thumb {
+  -webkit-appearance:none !important;
+  width: 18px;
+  height: 18px;
+  border-radius: 15px;
+  background: rgb(67, 135, 253);
+}
+
+.toggle-button {
+	background-color: white;
+	margin: 5px 0;
+	border-radius: 20px;
+	border: 2px solid #D0D0D0;
+	height: 24px;
+	cursor: pointer;
+	width: 50px;
+	position: relative;
+	display: inline-block;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+}
+
+.toggle-button button {
+	cursor: pointer;
+	outline: 0;
+	display:block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+	background-color: rgb(67, 135, 253);
+	float: left;
+	margin: -3px 0 0 -3px;
+	border: 2px solid #D0D0D0;
+	transition: left 0.3s;
+}
+
+.toggle-button-selected {
+	background-color: #83B152;
+	border: 2px solid #7DA652;
+}
+
+.toggle-button-selected button {
+	left: 26px;
+	top: 0;
+	margin: 0;
+	border: none;
+	width: 24px;
+	height: 24px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.window{
+    display:none;
+    width:300px;
+    height:300px;
+    position:absolute;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:9900;
+    padding:10px;
+    border-radius:10px;
+	text-decoration: bold;
+	text-align:center;
+}
+
+.window h4 {
+	font-size: 20px;
+}
+
+ 
+#mascara{
+    display:none;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+}
+ 
+.fechar{display:block; text-align:right;}
